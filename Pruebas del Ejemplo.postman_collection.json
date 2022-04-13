@@ -1,0 +1,269 @@
+{
+	"id": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+	"name": "Pruebas del Ejemplo",
+	"description": "",
+	"order": [
+		"c0f897ee-e785-3c2e-c307-24dfd4f7ea8e",
+		"ff12f13a-13d4-2b26-96d7-23928a67ae6a",
+		"7cd87e05-689e-bef8-1a20-73a0abf5f200",
+		"0e45e6fd-7784-2962-d440-87ecac87d045",
+		"300e548a-212f-7286-0669-507da26f1a4c",
+		"32f43bea-8ea8-1ed3-20d8-a49d22c861dd",
+		"153101c7-e4ea-d9cb-0735-a0787da9e2c7",
+		"89e0118e-f76b-8fff-456b-53f0a576be5e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649791181252,
+	"owner": 0,
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "0e45e6fd-7784-2962-d440-87ecac87d045",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/user?correo=prueba@f.com",
+			"queryParams": [
+				{
+					"key": "correo",
+					"value": "prueba@f.com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"data": null,
+			"dataMode": "params",
+			"name": "obtener usuario OK",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649812450535,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "153101c7-e4ea-d9cb-0735-a0787da9e2c7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/insertUsuario",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"data": [],
+			"dataMode": "raw",
+			"name": "insertar usuario con contraseña con formato mal",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649811362626,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"correo\":\"prueba@p.com\",\n  \"passw\":\"ruebaP@123\",\n  \"phoneList\":\n  [\n  \t{\n  \t\t\"number\":\"123456\",\n  \t\t\"citycode\":\"1\",\n  \t\t\"contrycode\":\"2\"\n  \t}\n  \t]\n  \n\n}"
+		},
+		{
+			"id": "300e548a-212f-7286-0669-507da26f1a4c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/insertUsuario",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"data": [],
+			"dataMode": "raw",
+			"name": "insertar usuario Ok",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649812376970,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"correo\":\"prueba@f.com\",\n  \"passw\":\"PxssY@23**\",\n  \"phoneList\":\n  [\n  \t{\n  \t\t\"number\":\"123456\",\n  \t\t\"citycode\":\"1\",\n  \t\t\"contrycode\":\"2\"\n  \t}\n  \t]\n  \n\n}"
+		},
+		{
+			"id": "32f43bea-8ea8-1ed3-20d8-a49d22c861dd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/insertUsuario",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1649811198008,
+			"name": "Insertar usuario con correo invalido",
+			"description": "",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"correo\":\"prueba@com\",\n  \"passw\":\"PruebaP@123*\",\n  \"phoneList\":\n  [\n  \t{\n  \t\t\"number\":\"123456\",\n  \t\t\"citycode\":\"1\",\n  \t\t\"contrycode\":\"2\"\n  \t}\n  \t]\n  \n\n}"
+		},
+		{
+			"id": "7cd87e05-689e-bef8-1a20-73a0abf5f200",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/user?correo=prueba@com.com",
+			"queryParams": [
+				{
+					"key": "correo",
+					"value": "prueba@com.com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"data": null,
+			"dataMode": "params",
+			"name": "obtener usuario pero el correo no existe",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649810294277,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "89e0118e-f76b-8fff-456b-53f0a576be5e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/insertUsuario",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1649812468704,
+			"name": "insertar el usuario pero ya existe el correo",
+			"description": "",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"correo\":\"prueba@f.com\",\n  \"passw\":\"PxssY@23**\",\n  \"phoneList\":\n  [\n  \t{\n  \t\t\"number\":\"123456\",\n  \t\t\"citycode\":\"1\",\n  \t\t\"contrycode\":\"2\"\n  \t}\n  \t]\n  \n\n}"
+		},
+		{
+			"id": "c0f897ee-e785-3c2e-c307-24dfd4f7ea8e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"data": [],
+			"dataMode": "raw",
+			"name": "obtener usuario sin pasar el correo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649809865949,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\n}"
+		},
+		{
+			"id": "ff12f13a-13d4-2b26-96d7-23928a67ae6a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/user?correo=prueba@com",
+			"queryParams": [
+				{
+					"key": "correo",
+					"value": "prueba@com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "60a19b0a-1341-fe26-5385-a8bd9332a389",
+			"data": null,
+			"dataMode": "params",
+			"name": "obtener usuario con error de formato de correo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649810023232,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}
